@@ -6,7 +6,9 @@ _G.ESPConfiguration = {
     ShowAllyTeam = true,
     UseTeamColor = false
 }
-
+repeat
+    task.wait()
+until _G.ESPConfiguration.Enabled
 local Camera = game:GetService("Workspace").CurrentCamera
 local RunService = game:GetService("RunService")
 
